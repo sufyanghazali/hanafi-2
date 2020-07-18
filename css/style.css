@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+:root {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.check {
+    border: 1px solid hotpink;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.header {
+    width: 100%;
+    padding: 0 1rem;
+    /* position: fixed; */
+}
+
+.roles__text {
+    margin-right: 4px;
+    font-size: 13px;
+}
+
+.role__container,
+.roles {
+    display: flex;
+}
+
+.role__container {
+    padding: 2rem 0 1rem;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+.role {
+    margin: 0 4px;
+}
+
+.info__wrapper {
+    position: absolute;
+    /* right: 0; */
+}
+
+.info__button {
+    position: absolute;
+    width: 18px;
+    right: 0;
+    z-index: 20;
+    fill: grey;
+}
+
+.info__button:hover {
+    fill: black;
+}
+
+.info__screen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background: white; */
+    /* top:0; */
+    /* padding: 2rem 0 1rem; */
+    /* z-index: 10; */
+    display: none;
+}
+
+.info__text {
+    background: white;
+
+    position: absolute;
+}
+
+.onhover:hover {
+    background: blue;
+}
+
+.breadcrumbs {
+    display: flex;
+    padding: 1rem 0;
+}
+
+.crumb {
+    font-family: "Courier New";
+}
+
+.crumb:not(:first-child) {
+    margin-left: 1rem;
+}
+
+.main {
+    padding-top: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.img__wrapper {
+    margin-bottom: 1rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.media__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.media__button {
+    height: 1.2rem;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.5);
+
+    transition: color 0.3s ease-in-out;
+}
+
+.media__button:hover {
+    color: black;
+}
+
+.media__button--disabled {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.media__button--disabled:hover {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.media__button--pause {
+    display: none;
+}
+
+.item__info {
+    display: none;
+}
+
+.item__desc {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.item__name {
+    margin-bottom: 0.5rem;
+}
+
+.btn--interest {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 300px;
+    height: 3rem;
+    background: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.footer {
+    /* position: absolute; */
+    /* bottom: 0; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.contact {
+    font-family: "Courier New";
+    padding-bottom: 1rem;
+}
+
+/**
+*
+*  MEDIA QUERIES
+*
+*/
+
+@media (min-width: 450px) {
+    .main,
+    .header {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .media__button {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .main,
+    .header {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .role__container {
+        padding: 3rem 0 2rem;
+        border-bottom: 1px solid black;
+        position: relative;
+    }
+
+    .item {
+        margin-top: 10rem;
+    }
+
+    .media__wrapper {
+        margin-bottom: 7rem;
+    }
+
+    .info__screen {
+    }
+}
