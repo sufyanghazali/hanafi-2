@@ -1,4 +1,4 @@
-const infoScreen = document.querySelector(".info__screen");
+const infoText = document.querySelector(".info__text");
 const infoButton = document.querySelector(".info__button");
 
 const playButton = document.querySelector(".media__button--play");
@@ -24,16 +24,14 @@ function toggleVisibility(element, display) {
 }
 
 function clickInfo() {
-    toggleVisibility(infoScreen, "block");
     console.log("wtf");
+    toggleVisibility(infoText, "flex");
 }
 
 infoButton.addEventListener("click", clickInfo);
 
-
-
 playButton.addEventListener("click", () => {
-    console.log("play button")
+    console.log("play button");
     if (technicolorAudio.paused) {
         technicolorAudio.play();
         changeClass(playButton, "fa-play", "fa-pause");
@@ -42,6 +40,11 @@ playButton.addEventListener("click", () => {
         changeClass(playButton, "fa-pause", "fa-play");
 
     }
+});
+
+technicolorAudio.addEventListener("ended", () => {
+    console.log("playback ended");
+    changeClass(playButton, "fa-pause", "fa-play");
 });
 
 descButton.addEventListener("click", () => {
@@ -58,14 +61,14 @@ descButton.addEventListener("click", () => {
  * 3. add onhover class
  */
 
-function setInfo() {
-    console.log("fired");
-    if (window.innerWidth >= 700) {
-        infoButton.removeEventListener("click", clickInfo);
-        console.log("removed");
-        infoButton.classList.add("onhover");
-    }
+// function setInfo() {
+//     console.log("fired");
+//     if (window.innerWidth >= 700) {
+//         infoButton.removeEventListener("click", clickInfo);
+//         console.log("removed");
+//         infoButton.classList.add("onhover");
+//     }
 
-}
-window.addEventListener("load", setInfo);
-window.addEventListener("resize", setInfo);
+// }
+// window.addEventListener("load", setInfo);
+// window.addEventListener("resize", setInfo);
