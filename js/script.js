@@ -4,8 +4,7 @@ const infoButton = document.querySelector(".info__button");
 const playButton = document.querySelector(".media__button--play");
 const technicolorAudio = document.querySelector("#technicolor__audio");
 
-const descButton = document.querySelector(".media__button--desc");
-// const itemInfo = document.querySelector(".item__info");
+
 
 function changeClass(el, currentClass, newClass) {
     el.classList.remove(currentClass);
@@ -23,12 +22,11 @@ function toggleVisibility(element, display) {
     }
 }
 
-// function clickInfo() {
-//     console.log("wtf");
-//     toggleVisibility(infoText, "flex");
-// }
 
-// infoButton.addEventListener("click", clickInfo);
+infoButton.addEventListener("click", () => {
+    console.log("Toggling info");
+    toggleVisibility(infoText, "flex");
+});
 
 playButton.addEventListener("click", () => {
     console.log("play button");
@@ -47,8 +45,12 @@ technicolorAudio.addEventListener("ended", () => {
     changeClass(playButton, "fa-pause", "fa-play");
 });
 
-descButton.addEventListener("click", () => {
-    toggleVisibility(itemInfo, "block");
-    descButton.classList.toggle("fa-plus");
-    descButton.classList.toggle("fa-minus");
-});
+
+
+// const descButton = document.querySelector(".media__button--desc");
+
+// descButton.addEventListener("click", () => {
+//     toggleVisibility(itemInfo, "block");
+//     descButton.classList.toggle("fa-plus");
+//     descButton.classList.toggle("fa-minus");
+// });
