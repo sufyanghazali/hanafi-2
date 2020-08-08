@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
         integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <link href="./css/style.css" rel="stylesheet">
@@ -54,14 +56,35 @@
         <main class="main">
             <div class="item">
 
-                <!-- carousel -->
-                <div class="img__wrapper img__wrapper--item">
+                <!-- CAROUSEL -->
+                <!-- <div class="img__wrapper img__wrapper--item">
                     <img src="images/card/composition n.1_cased_front_cropped.jpg">
-                    <!-- <img src="images/card/composition n.1_cased_back_cropped.jpg"> -->
+                </div> -->
+
+                <div id="carouselExampleControls" class="carousel slide img__wrapper" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/card/composition n.1_cased_front_cropped.jpg"
+                                alt="Front">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/card/composition n.1_cased_back_cropped.jpg"
+                                alt="Back">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
 
-                <!-- media buttons -->
-                <!-- <div class="media__wrapper">
+
+                <!-- MEDIA BUTTONS -->
+                <div class="media__wrapper">
                     <div>
                         <i class="fas fa-play media__button media__button--play"></i>
 
@@ -70,18 +93,12 @@
                             <code>audio</code> element.
                         </audio>
                     </div>
-                    <div>
-                        <!-- <img src="images/svg/plus.svg" alt="" class="media__button media__button--desc"> -->
-
-                        <!-- <i class="fas fa-plus media__button media__button--desc"></i> -->
-                        <!-- <span class="media__button media__button--desc">info</span> -->
-
-
-                    <!-- </div>
-                    <div>
-                        <i class="fas fa-chevron-right media__button media__button--next media__button--disabled"></i>
-                    </div>
-                </div> -->
+                    <a class="" href="mailto:040493h@gmail.com">
+                        <div>
+                            Enquiries
+                        </div>
+                    </a>
+                </div>
 
                 <!-- item info -->
                 <div class="item__info">
@@ -92,15 +109,19 @@
                             <br>serially numbered, edition of 100.</p>
                         <p>86 x 54 mm.</p>
                     </div>
-                    <a class="btn--interest" href="mailto:040493h@gmail.com">
-                        <div>
-                            Enquiries Welcome
-                        </div>
-                    </a>
                 </div>
 
             </div>
         </main>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
         <script src="./js/script.js"></script>
     </body>
 

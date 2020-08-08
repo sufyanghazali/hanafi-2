@@ -5,7 +5,7 @@ const playButton = document.querySelector(".media__button--play");
 const technicolorAudio = document.querySelector("#technicolor__audio");
 
 const descButton = document.querySelector(".media__button--desc");
-const itemInfo = document.querySelector(".item__info");
+// const itemInfo = document.querySelector(".item__info");
 
 function changeClass(el, currentClass, newClass) {
     el.classList.remove(currentClass);
@@ -23,12 +23,12 @@ function toggleVisibility(element, display) {
     }
 }
 
-function clickInfo() {
-    console.log("wtf");
-    toggleVisibility(infoText, "flex");
-}
+// function clickInfo() {
+//     console.log("wtf");
+//     toggleVisibility(infoText, "flex");
+// }
 
-infoButton.addEventListener("click", clickInfo);
+// infoButton.addEventListener("click", clickInfo);
 
 playButton.addEventListener("click", () => {
     console.log("play button");
@@ -52,23 +52,3 @@ descButton.addEventListener("click", () => {
     descButton.classList.toggle("fa-plus");
     descButton.classList.toggle("fa-minus");
 });
-
-
-/**
- * 
- * 1. check if the screen size is less than 768px
- * 2. remove click event on info button
- * 3. add onhover class
- */
-
-// function setInfo() {
-//     console.log("fired");
-//     if (window.innerWidth >= 700) {
-//         infoButton.removeEventListener("click", clickInfo);
-//         console.log("removed");
-//         infoButton.classList.add("onhover");
-//     }
-
-// }
-// window.addEventListener("load", setInfo);
-// window.addEventListener("resize", setInfo);
