@@ -5,13 +5,12 @@ const playButton = document.querySelector(".media__button--play");
 const technicolorAudio = document.querySelector("#technicolor__audio");
 
 
-
 function changeClass(el, currentClass, newClass) {
     el.classList.remove(currentClass);
     el.classList.add(newClass);
 }
 
-function toggleVisibility(element, display) {
+function toggleVisibility(element, display) { 
     const elementStyles = window.getComputedStyle(element);
     const currentDisplay = elementStyles.getPropertyValue("display");
 
