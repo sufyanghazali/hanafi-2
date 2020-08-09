@@ -8,10 +8,10 @@ html,
 body {
     height: 100%;
     font-family: "Courier New";
+    font-size: 11px;
 }
 
 :root {
-    font-size: 11px;
     /* font-family: Helvetica, Arial, sans-serif; */
 }
 
@@ -74,7 +74,7 @@ img {
 
 .info__text {
     background: white;
-    display: flex;
+    display: none;
     flex-direction: column;
     position: absolute;
     line-height: 18px;
@@ -99,7 +99,7 @@ img {
 }
 
 .main {
-    padding-top: 2rem;
+    padding-top: 5rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -111,23 +111,37 @@ img {
     margin-right: auto;
 }
 
+.carousel-indicators {
+    margin-top: 1rem;
+}
+
+li[data-target="#carouselExampleIndicators"] {
+    background: rgba(0, 0, 0, 0.3);
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+}
+li[data-target="#carouselExampleIndicators"].active {
+    background: rgba(0, 0, 0, 0.8);
+}
+
 .media__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    max-width: 600px;
-    margin-bottom: 5rem;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .media__button {
-    height: 1.2rem;
+    display: block;
+    /* height: 1.2rem; */
     cursor: pointer;
-    color: rgba(0, 0, 0, 0.5);
-
+    /* color: rgba(0, 0, 0, 0.5); */
+    border: 1px solid black;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     transition: color 0.3s ease-in-out;
+}
+
+.media__button--price {
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .media__button:hover {
@@ -162,6 +176,8 @@ img {
 }
 
 .item__name {
+    font-size: 13px;
+    font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
@@ -175,6 +191,7 @@ img {
     color: white;
     border: none;
     border-radius: 5px;
+    margin-top: 2rem;
     font-size: 0.9rem;
     align-items: center;
     justify-content: center;
@@ -210,7 +227,7 @@ img {
     }
 
     .media__button {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 }
 
@@ -232,6 +249,12 @@ img {
     }
 
     .media__wrapper {
-        margin-bottom: 7rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        padding: 0 3rem 3rem;
+        bottom: 0;
     }
 }

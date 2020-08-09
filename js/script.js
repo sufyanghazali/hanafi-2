@@ -10,7 +10,7 @@ function changeClass(el, currentClass, newClass) {
     el.classList.add(newClass);
 }
 
-function toggleVisibility(element, display) { 
+function toggleVisibility(element, display) {
     const elementStyles = window.getComputedStyle(element);
     const currentDisplay = elementStyles.getPropertyValue("display");
 
@@ -31,11 +31,10 @@ playButton.addEventListener("click", () => {
     console.log("play button");
     if (technicolorAudio.paused) {
         technicolorAudio.play();
-        changeClass(playButton, "fa-play", "fa-pause");
+        // changeClass(playButton, "fa-play", "fa-pause");
     } else {
         technicolorAudio.pause();
-        changeClass(playButton, "fa-pause", "fa-play");
-
+        // changeClass(playButton, "fa-pause", "fa-play");
     }
 });
 
