@@ -113,6 +113,7 @@ img {
 
 .carousel-indicators {
     margin-top: 1rem;
+    top: calc(100% + 2rem); 
 }
 
 li[data-target="#carouselExampleIndicators"] {
@@ -125,14 +126,9 @@ li[data-target="#carouselExampleIndicators"].active {
     background: rgba(0, 0, 0, 0.8);
 }
 
-.media__wrapper {
-}
-
 .media__button {
     display: block;
-    /* height: 1.2rem; */
     cursor: pointer;
-    /* color: rgba(0, 0, 0, 0.5); */
     border: 1px solid black;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -224,10 +220,6 @@ li[data-target="#carouselExampleIndicators"].active {
     .header {
         padding-left: 2rem;
         padding-right: 2rem;
-    }
-
-    .media__button {
-        font-size: 1.25rem;
     }
 }
 

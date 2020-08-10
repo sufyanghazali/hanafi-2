@@ -22,33 +22,23 @@ function toggleVisibility(element, display) {
 }
 
 
+// toggle contact info
 infoButton.addEventListener("click", () => {
     console.log("Toggling info");
     toggleVisibility(infoText, "flex");
 });
 
+
+// pause audio
 playButton.addEventListener("click", () => {
     console.log("play button");
     if (technicolorAudio.paused) {
         technicolorAudio.play();
-        // changeClass(playButton, "fa-play", "fa-pause");
     } else {
         technicolorAudio.pause();
-        // changeClass(playButton, "fa-pause", "fa-play");
     }
 });
 
-technicolorAudio.addEventListener("ended", () => {
-    console.log("playback ended");
-    changeClass(playButton, "fa-pause", "fa-play");
-});
 
-
-
-// const descButton = document.querySelector(".media__button--desc");
-
-// descButton.addEventListener("click", () => {
-//     toggleVisibility(itemInfo, "block");
-//     descButton.classList.toggle("fa-plus");
-//     descButton.classList.toggle("fa-minus");
-// });
+// Disable auto cycle for carousel
+$('.carousel').carousel({interval: false});
