@@ -147,6 +147,7 @@ li[data-target="#carouselExampleIndicators"].active {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     transition: color 0.3s ease-in-out;
+    text-transform: uppercase;
 }
 
 .f-left {
@@ -281,7 +282,7 @@ li[data-target="#carouselExampleIndicators"].active {
     }
 
     .media__button--price {
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
