@@ -3,6 +3,7 @@ const infoButton = document.querySelector(".info__button");
 
 const playButton = document.querySelector(".media__button--play");
 const technicolorAudio = document.querySelector("#technicolor__audio");
+const techincolorVideo = document.querySelector("#technicolor__video");
 
 
 function changeClass(el, currentClass, newClass) {
@@ -39,6 +40,13 @@ playButton.addEventListener("click", () => {
     }
 });
 
+techincolorVideo.addEventListener("click", () => {
+    if (techincolorVideo.paused) {
+        techincolorVideo.play();
+    } else {
+        techincolorVideo.pause();
+    }
+});
 
 // Disable auto cycle for carousel
 $('.carousel').carousel({interval: false});
