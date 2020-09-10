@@ -40,13 +40,16 @@ playButton.addEventListener("click", () => {
     }
 });
 
-techincolorVideo.addEventListener("click", () => {
+technicolorVideo.addEventListener("click", () => {
     if (techincolorVideo.paused) {
         techincolorVideo.play();
     } else {
         techincolorVideo.pause();
     }
 });
+
+technicolorAudio.play();
+techincolorVideo.play();
 
 // Disable auto cycle for carousel
 $('.carousel').carousel({interval: false});
