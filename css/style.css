@@ -115,21 +115,6 @@ img {
     margin-right: auto;
 }
 
-.carousel-indicators {
-    margin-top: 1rem;
-    top: calc(100% + 2rem);
-}
-
-li[data-target="#carouselExampleIndicators"] {
-    background: rgba(0, 0, 0, 0.3);
-    height: 8px;
-    width: 8px;
-    border-radius: 50%;
-}
-li[data-target="#carouselExampleIndicators"].active {
-    background: rgba(0, 0, 0, 0.8);
-}
-
 .media__wrapper {
     /* display: flex; */
     /* justify-content: space-between;
@@ -158,11 +143,22 @@ li[data-target="#carouselExampleIndicators"].active {
     float: right;
 }
 
-#technicolor__video {
+/* original */
+
+/* #technicolor__video {
     width: 100%;
     max-width: 480px;
     height: auto;
+} */
+
+#technicolor__video {
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
+
 .media__button:hover {
     color: black;
 }
@@ -233,6 +229,28 @@ li[data-target="#carouselExampleIndicators"].active {
 .contact {
     font-family: "Courier New";
     padding-bottom: 1rem;
+}
+
+/**
+*
+*   BOOTSTRAP MODIFICTION
+*
+*/
+
+.carousel-indicators {
+    bottom: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+li[data-target="#carouselExampleIndicators"] {
+    background: rgba(0, 0, 0, 0.3);
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+}
+li[data-target="#carouselExampleIndicators"].active {
+    background: rgba(0, 0, 0, 0.8);
 }
 
 /**
