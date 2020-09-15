@@ -128,6 +128,7 @@ img {
 .media__button {
     display: block;
     cursor: pointer;
+    background: white;
     border: 1px solid black;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
