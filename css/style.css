@@ -64,6 +64,10 @@ img {
     fill: grey;
 }
 
+.info__button--svg {
+    fill: #fff;
+}
+
 .info__button:hover {
     fill: black;
 }
@@ -240,8 +244,8 @@ img {
 
 .carousel-indicators {
     bottom: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    /* top: 50%;
+    transform: translateY(-50%); */
 }
 
 li[data-target="#carouselExampleIndicators"] {

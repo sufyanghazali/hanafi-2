@@ -54,11 +54,12 @@
     </header>
 
     <body>
-        <main class="main">
+        <main class="main pb-0">
             <div class="item">
 
                 <!-- CAROUSEL -->
                 <div id="carouselExampleIndicators" class="carousel slide img__wrapper" data-ride="carousel">
+                    
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="images/card/composition n.1_cased_back_cropped.jpg"
@@ -80,6 +81,11 @@
                         </div>
 
                     </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    </ol>
+
                 </div>
             </div>
 
@@ -91,11 +97,6 @@
         <div class="media__wrapper">
             <div class="f-left">
                 <span class="media__button media__button--play">audio</span>
-
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                </ol>
 
                 <audio id="technicolor__audio" src="./audio/technicolor.mp4" autoplay loop>
                     Your browser does not support the
