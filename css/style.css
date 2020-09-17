@@ -301,7 +301,7 @@ li[data-target="#carouselExampleIndicators"].active {
     }
 
     .media__wrapper {
-        padding: 2rem 3rem;
+        padding: 0 2rem 3rem 2rem;
     }
 
     .media__button--price {
