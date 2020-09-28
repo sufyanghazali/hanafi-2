@@ -113,6 +113,7 @@ img {
 }
 
 .img__wrapper {
+    margin-top: 7rem;
     margin-bottom: 1rem;
     max-width: 600px;
     margin-left: auto;
@@ -269,13 +270,8 @@ li[data-target="#carouselExampleIndicators"].active {
         padding-right: 2rem;
     }
 
-    .item__desc {
-        flex-direction: row;
-        margin-left: 4rem;
-    }
-
-    .line-2 {
-        padding-left: 0.5rem;
+    .img__wrapper {
+        margin-top: 15rem;
     }
 }
 
@@ -301,6 +297,14 @@ li[data-target="#carouselExampleIndicators"].active {
         margin-right: 18px;
     }
 
+    .item__desc {
+        flex-direction: row;
+        margin-left: 4rem;
+    }
+
+    .line-2 {
+        padding-left: 0.5rem;
+    }
     .media__wrapper {
         padding: 0 2rem 3rem 2rem;
     }
