@@ -200,6 +200,7 @@ img {
 }
 
 .item__desc--line {
+    font-size: 10px;
     margin-bottom: 0;
 }
 
@@ -272,6 +273,10 @@ li[data-target="#carouselExampleIndicators"].active {
 
     .img__wrapper {
         margin-top: 15rem;
+    }
+
+    .item__desc--line {
+        font-size: 11px;
     }
 }
 
